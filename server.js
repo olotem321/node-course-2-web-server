@@ -50,6 +50,12 @@ app.get('/about', (req, res) => {
   });
 });
 
+app.get('/projects', (req, res) => {
+  res.render('projects.hbs',{
+    pageTitle: 'Port folios'
+  })
+});
+
 app.get('/bad', (req, res) => {
   res.send({
     error: 'This is a bed request'
